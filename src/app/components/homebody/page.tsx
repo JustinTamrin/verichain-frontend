@@ -3,7 +3,6 @@ import Navbar from "../navbar/page";
 const Homebody = () => {
   return (
     <>
-      <Navbar />
       <main>
         <div className="container">
           <Image

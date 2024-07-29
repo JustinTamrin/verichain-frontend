@@ -4,7 +4,6 @@ import Homebody from "../homebody/page";
 const Footer = () => {
   return (
     <>
-      <Homebody />
       <footer>
         <div className="row">
           <div className="col">
