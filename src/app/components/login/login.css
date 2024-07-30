@@ -91,7 +91,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin: 1px auto;
+  margin: 0px auto;
+  margin-top: 10px;
 }
 
 .submit1 {
@@ -131,6 +132,15 @@ body {
   color: #0080ff;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.forgotpassword-click {
+  font-weight: 700;
+}
+
+.forgotpassword-click:hover {
+  color: #00478e;
+  transition: 1s;
 }
 
 .forgotpassword-click {
