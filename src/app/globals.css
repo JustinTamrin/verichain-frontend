@@ -433,6 +433,7 @@ footer {
 	height: 250px;
 	background-color: #ffffff;
 	color: black;
+	border-radius: 20px;
 }
 
 .popup-inner .close-btn {
@@ -442,7 +443,7 @@ footer {
 }
 
 .uploads-popup{
-	color: black;
+	color: #737579;
 	align-content: center;
 	justify-content: center;
 	/* font-family: "Montserrat-Light"; */
@@ -490,9 +491,9 @@ footer {
   }
 
   /* Specific widths for each column */
-  .uploads-table td:nth-child(1) { width: 40%; } /* Name column */
+  .uploads-table td:nth-child(1) { width: 55%; } /* Name column */
   .uploads-table td:nth-child(2) { width: 40%; } /* Hash column */
-  .uploads-table td:nth-child(3) { width: 20%; } /* University column */
+  .uploads-table td:nth-child(3) { width: 5%; } /* University column */
 
   .uploads-header th {
 	font-size: 14px;
