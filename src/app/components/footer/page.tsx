@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "../navbar/page";
 import Homebody from "../homebody/page";
+
 const Footer = () => {
   return (
     <>
