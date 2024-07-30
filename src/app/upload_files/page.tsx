@@ -10,7 +10,7 @@ import { loadEnvFile } from "process";
 import { Ribeye } from "next/font/google";
 import { useState } from "react";
 
-export default function upload_files() {
+export default function UploadFiles() {
 	const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
@@ -147,45 +147,45 @@ export default function upload_files() {
             }}
           />
         </div>
-		<button onClick={() => setButtonPopup(true) } style={{cursor:"pointer"}}>Open Pop-up</button>
+		<button className='open-uploaded' onClick={() => setButtonPopup(true) } style={{cursor:"pointer"}}>Open Pop-up</button>
 		<Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
-  <div className="uploads-popup" id="upload_success">
-    <div className="center-header">
-      <h3>Files Uploaded</h3>
-      <p>Type: Bachelor's Degree</p>
-    </div>
-    <table className="uploads-table">
-      <thead className="uploads-header">
-        <tr>
-          <th>Name</th>
-          <th>Hash</th>
-        </tr>
-      </thead>
-      <tbody className="results-body">
-        <tr>
-          <td>Justin Nicholas Bachelor's Degree Certificate in Computer Science</td>
-          <td>0x191ba7bb8p09888778onu979k0</td>
-		  <td><CopyTextButton textToCopy="0x191ba7bb8p09888778onu979k0" /></td>
-        </tr>
-        <tr>
-		<td>Justin Nicholas Bachelor's Degree Certificate in Computer Science</td>
-          <td>0x191ba7bb8p09888778onu979k0</td>
-		  <td><CopyTextButton textToCopy="0x191ba7bb8p09888778onu979k0" /></td>
-        </tr>
-        <tr>
-		<td>Justin Nicholas Bachelor's Degree Certificate in Computer Science</td>
-          <td>0x191ba7bb8p09888778onu979k0</td>
-		  <td><CopyTextButton textToCopy="0x191ba7bb8p09888778onu979k0" /></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  {/* <div>
-    <div className="center-header" id="upload_fail">
-      <p>Unsuccessful Upload</p>
-    </div>
-  </div> */}
-</Popup>
+			<div className="uploads-popup" id="upload_success">
+				<div className="center-header">
+				<h3>Files Uploaded</h3>
+				<p>Type: Bachelor's Degree</p>
+				</div>
+				<table className="uploads-table">
+				<thead className="uploads-header">
+					<tr>
+					<th>Name</th>
+					<th>Hash</th>
+					</tr>
+				</thead>
+				<tbody className="results-body">
+					<tr>
+					<td>Justin Nicholas Bachelor's Degree Certificate in Computer Science</td>
+					<td>0x191ba7bb8p09888778onu979k0</td>
+					<td><CopyTextButton textToCopy="0x191ba7bb8p09888778onu979k0" /></td>
+					</tr>
+					<tr>
+					<td>Justin Nicholas Bachelor's Degree Certificate in Computer Science</td>
+					<td>0x191ba7bb8p09888778onu979k0</td>
+					<td><CopyTextButton textToCopy="0x191ba7bb8p09888778onu979k0" /></td>
+					</tr>
+					<tr>
+					<td>Justin Nicholas Bachelor's Degree Certificate in Computer Science</td>
+					<td>0x191ba7bb8p09888778onu979k0</td>
+					<td><CopyTextButton textToCopy="0x191ba7bb8p09888778onu979k0" /></td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			{/* <div>
+				<div className="center-header" id="upload_fail">
+				<p>Unsuccessful Upload</p>
+				</div>
+			</div> */}
+		</Popup>
         <h4 className="historysection">History</h4>
         <p className="historycontent">No history found</p>
         <hr
