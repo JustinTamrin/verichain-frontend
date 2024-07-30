@@ -42,7 +42,7 @@ const login = () => {
                 </div>
               </div>
               <div className="forgot-password">
-                Dont't have an account? &nbsp;
+                Dontt have an account? &nbsp;
                 <Link href={"./signup/"}>
                   <span className="forgotpassword-click">Sign up Here</span>
                 </Link>

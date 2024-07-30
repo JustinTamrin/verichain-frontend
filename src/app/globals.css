@@ -345,7 +345,7 @@ footer {
 
 .container {
   position: absolute;
-  width: 100%; /* Adjust based on your container's width */
+  width: 100%;
   height: 100vh;
   z-index: -1;
   top: 0;

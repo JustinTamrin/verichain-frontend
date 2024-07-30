@@ -68,7 +68,7 @@ const Homebody = () => {
               <tr>
                 <th>John Dew</th>
                 <th>12-April-2024</th>
-                <th>Bachelor's Degree Cert</th>
+                <th>Bachelors Degree Cert</th>
                 <th>Sunway University</th>
               </tr>
             </tbody>
