@@ -2,6 +2,7 @@ import "./signup.css";
 import Link from "next/link";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -18,25 +19,29 @@ const signup = () => {
             <div className="underline"></div>
             <div className="inputs">
               <div className="input">
-                <img
+                <Image
                   src="/img/person_icon.png"
-                  alt=""
-                  style={{ width: "30px", height: "30px" }}
+                  alt="person_icon"
+                  width={30}
+                  height={30}
                 />
                 <input type="text" placeholder="Username" />
               </div>
               <div className="input">
-                <img
+                <Image
                   src="/img/email_icon.png"
-                  alt=""
-                  style={{ width: "30px", height: "30px" }}
+                  alt="email_icon"
+                  width={30}
+                  height={30}
                 />
                 <input type="email" placeholder="Email" />
               </div>
               <div className="input">
-                <img
+                <Image
                   src="/img/password_icon.png"
-                  alt=""
+                  alt="password_icon"
+                  width={25}
+                  height={25}
                   style={{ height: "25px", width: "25px" }}
                 />
                 <input type="password" placeholder="Password" />
@@ -50,12 +55,14 @@ const signup = () => {
                 className="submit-container"
                 style={{ marginBottom: "60px" }}
               >
-                <div
-                  className="submit1"
-                  style={{ border: "1px solid #0080FF" }}
-                >
-                  Sign Up
-                </div>
+                <Link href={"/search_files"}>
+                  <div
+                    className="submit1"
+                    style={{ border: "1px solid #0080FF" }}
+                  >
+                    Sign Up
+                  </div>
+                </Link>
                 <Link href={"./login"}>
                   <div className="submit2">Login</div>
                 </Link>
@@ -63,7 +70,13 @@ const signup = () => {
             </div>
           </div>
         </div>
-        <img src="/img/sui_water.png" style={{ position: "absolute" }}></img>
+        <Image
+          src="/img/sui_water.png"
+          width={1920}
+          height={1080}
+          style={{ position: "absolute" }}
+          alt="sui_water logo"
+        ></Image>
       </body>
     </>
   );

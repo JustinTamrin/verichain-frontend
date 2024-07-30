@@ -2,10 +2,16 @@
 
 import Image from "next/image";
 import Navbar from "../navbar/page";
-import { searchfiles } from "../../utils/search_files";
-import { useRef } from "react";
+import { searchfiles } from "../../../app/utils/search_files";
+import { useRef, useEffect } from "react";
 
 const Homebody = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    searchfiles(); // Initialize or call the function here
+  }, []);
+  console.log(searchfiles());
   return (
     <>
       <main>
@@ -13,6 +19,7 @@ const Homebody = () => {
           <Image
             src="/img/img 1.png"
             alt="VeriChain Token"
+            style={{ marginTop: "100px" }}
             width={450}
             height={420}
           />
