@@ -38,7 +38,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="action_btn">
-          <Link href="/" passHref className="buttons1">
+          <Link href="/upload_files" passHref className="buttons1">
             Upload Files
           </Link>
           <Link href="/" passHref className="buttons2">
