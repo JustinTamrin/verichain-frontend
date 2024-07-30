@@ -6,6 +6,7 @@ export default function search_files() {
     <>
       <Navbar />
       <Homebody />
+
       <Footer />
     </>
   );

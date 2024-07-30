@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "../navbar/page";
+import { searchfiles } from "../../utils/search_files";
+import { useRef } from "react";
+
 const Homebody = () => {
   return (
     <>
@@ -28,6 +33,7 @@ const Homebody = () => {
                       type="text"
                       placeholder="Search Credentials"
                       className="search"
+                      name="hash-input"
                     />
                     <button type="submit" className="searchsubmit">
                       Search
@@ -52,15 +58,17 @@ const Homebody = () => {
           <table className="results-table">
             <thead className="results-header">
               <tr>
-                <th>File Name</th>
+                <th>Name</th>
                 <th>Date of Issue</th>
+                <th>Type of Credentials</th>
                 <th>Issuer</th>
               </tr>
             </thead>
             <tbody className="results-body">
               <tr>
-                <th id="myHash"></th>
-                <th id="myDate"></th>
+                <th>John Dew</th>
+                <th>12-April-2024</th>
+                <th>Bachelor's Degree Cert</th>
                 <th>Sunway University</th>
               </tr>
             </tbody>
